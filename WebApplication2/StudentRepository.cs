@@ -28,12 +28,12 @@ namespace WebApplication2
         {
             MySqlConnection connection = new MySqlConnection(connectionString);
             connection.Open();
-            string query = "SELECT COUNT(*) FROM STUDENT WHERE Mobile=@mobile";
+            string query = "SELECT COUNT(1) FROM STUDENT WHERE Mobile=@mobile";
             MySqlCommand command = new MySqlCommand(query, connection);
             command.Parameters.AddWithValue("@mobile", mobile);
             int count = Convert.ToInt32(command.ExecuteScalar());
             connection.Close();
-            return count != 1;
+            return count == 1;
         }
         public void AddStudent(Student student)
         {

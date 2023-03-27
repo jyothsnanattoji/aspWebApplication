@@ -17,7 +17,7 @@ namespace WebApplication2
         {
             String year = dateString.Substring(Math.Max(0, dateString.Length - 4));
             DateTime dateTime;
-            if (DateTime.TryParseExact(dateString, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out dateTime)&& ((Convert.ToInt32(year))-dateTime.Year)>=17)
+            if (DateTime.TryParseExact(dateString, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out dateTime))
             {
                 return true;
             }

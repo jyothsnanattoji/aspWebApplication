@@ -38,7 +38,7 @@ namespace WebApplication2.Webpages
                 ClearErrorMessages();
                 ViewState["PageState"] = "Initial";
 
-                Response.Redirect(Request.RawUrl);
+                //Response.Redirect(Request.RawUrl);
             }
         }
 
@@ -46,16 +46,16 @@ namespace WebApplication2.Webpages
         {
             ClearErrorMessages();
             // Update the page state
-            ViewState["PageState"] = "Submitted";
+            
             List<string> errors = new List<string>();
             Student student = new Student();
             if(string.IsNullOrEmpty(Id.Value))
             {
-                errors.Add("ID is a reuired field");
+                errors.Add("All the fields are a reuired field");
             }
             else if(string.IsNullOrEmpty(Marks.Value))
             {
-                errors.Add("Marks is a reuired field");
+                errors.Add("All the fields are a reuired field");
             }
             else
             {
@@ -77,6 +77,7 @@ namespace WebApplication2.Webpages
                 StudentRepository studentrepo = new StudentRepository(conn);
                 if(!studentrepo.SearchById(student.id) && !studentrepo.SearchByMobile(student.Mobile))
                 {
+                    ViewState["PageState"] = "Submitted";
                     studentrepo.AddStudent(student);
                     ClearFormFields();
                     ClearErrorMessages();
