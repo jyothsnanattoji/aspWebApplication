@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="WebApplication2.Webpages.WebForm1" %>
+﻿<%@ Page Language="C#" Async="true" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="WebApplication2.Webpages.WebForm1" %>
 
 <!DOCTYPE html>
 
@@ -8,17 +8,26 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
+    <script src="script.js"></script>
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="form1" runat="server" onsubmit="return validateIndex()">
         <div>
             TO INSERT A STUDENT DETAIL <br /><br />
             <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Insert Student" />
             <br /><br /><br />
             SERACH STUDENT BY ANY FIELD :<br /><br />
-            ID:<textarea id="Id" runat="server" pattern="\d+"></textarea>
-            First Name:<textarea id="FirstName" runat="server" ></textarea>
-            <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="View Student"/>
+            <asp:Table runat="server">
+               <asp:TableRow runat="server">
+                   <asp:TableCell runat="server"><asp:Label class="labelgap" runat="server">ID</asp:Label>  </asp:TableCell>
+                   <asp:TableCell runat="server"><asp:TextBox ID="Id" TextMode="Number" runat="server" ></asp:TextBox></asp:TableCell>
+               </asp:TableRow>
+               <asp:TableRow runat="server">
+                   <asp:TableCell runat="server"> <asp:Label class="labelgap" runat="server">First Name</asp:Label>   </asp:TableCell>
+                   <asp:TableCell runat="server"> <asp:TextBox ID="FirstName" TextMode="SingleLine" runat="server" ></asp:TextBox></asp:TableCell>
+               </asp:TableRow>
+                </asp:Table>
+            <asp:Button ID="Button2" runat="server" Text="View Student" OnClick="Button2_Click"/>
             <br /><br /> 
             <div>
                 <p id="errorLabel" runat="server"></p>

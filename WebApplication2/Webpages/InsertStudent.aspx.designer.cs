@@ -24,22 +24,13 @@ namespace WebApplication2.Webpages
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// Table1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Table Table1;
-
-        /// <summary>
         /// Id control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTextArea Id;
+        protected global::System.Web.UI.WebControls.TextBox Id;
 
         /// <summary>
         /// FirstName control.
@@ -48,7 +39,7 @@ namespace WebApplication2.Webpages
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTextArea FirstName;
+        protected global::System.Web.UI.WebControls.TextBox FirstName;
 
         /// <summary>
         /// LastName control.
@@ -57,7 +48,7 @@ namespace WebApplication2.Webpages
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTextArea LastName;
+        protected global::System.Web.UI.WebControls.TextBox LastName;
 
         /// <summary>
         /// Dob control.
@@ -66,16 +57,16 @@ namespace WebApplication2.Webpages
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTextArea Dob;
+        protected global::System.Web.UI.WebControls.TextBox Dob;
 
         /// <summary>
-        /// FatherNme control.
+        /// FatherName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTextArea FatherNme;
+        protected global::System.Web.UI.WebControls.TextBox FatherName;
 
         /// <summary>
         /// MotherName control.
@@ -84,7 +75,7 @@ namespace WebApplication2.Webpages
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTextArea MotherName;
+        protected global::System.Web.UI.WebControls.TextBox MotherName;
 
         /// <summary>
         /// Address control.
@@ -93,7 +84,7 @@ namespace WebApplication2.Webpages
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTextArea Address;
+        protected global::System.Web.UI.WebControls.TextBox Address;
 
         /// <summary>
         /// Mobile control.
@@ -102,7 +93,7 @@ namespace WebApplication2.Webpages
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTextArea Mobile;
+        protected global::System.Web.UI.WebControls.TextBox Mobile;
 
         /// <summary>
         /// Marks control.
@@ -111,7 +102,16 @@ namespace WebApplication2.Webpages
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTextArea Marks;
+        protected global::System.Web.UI.WebControls.TextBox Marks;
+
+        /// <summary>
+        /// Button1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button1;
 
         /// <summary>
         /// errorLabel control.

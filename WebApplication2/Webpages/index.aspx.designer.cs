@@ -39,7 +39,7 @@ namespace WebApplication2.Webpages
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTextArea Id;
+        protected global::System.Web.UI.WebControls.TextBox Id;
 
         /// <summary>
         /// FirstName control.
@@ -48,7 +48,7 @@ namespace WebApplication2.Webpages
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTextArea FirstName;
+        protected global::System.Web.UI.WebControls.TextBox FirstName;
 
         /// <summary>
         /// Button2 control.
